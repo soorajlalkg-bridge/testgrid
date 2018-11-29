@@ -31,4 +31,13 @@ class SettingsController extends Controller
 
     	return redirect('admin/settings')->with('message', 'Your password has been changed successfully!');
     }
+
+    public function upgrade()
+    {
+        $data = [];
+        $output =  shell_exec("git log --format=\"%H\" -n 1 2>&1");
+    //var_dump($output);
+    $data['output'] = $output;
+    	return view('admin.settings.upgrade', $data);
+    }
 }

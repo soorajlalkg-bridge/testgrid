@@ -80,6 +80,10 @@
                   <a class="nav-link" href="{{ url('/admin/changePassword') }}">
                     <i class="nav-icon icon-lock"></i> Change Password</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url('/admin/upgrade') }}">
+                    <i class="nav-icon icon-cursor"></i> Upgrade</a>
+                </li>
               </ul>
             </li>
             

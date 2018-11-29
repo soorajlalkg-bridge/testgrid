@@ -19,7 +19,7 @@ class ProfileController extends Controller
         //@todo - call git code
 //exec('git branch'.' 2>&1', $output, $return_var);
 //var_dump($output);
-$output =  shell_exec("git branch 2>&1");
+$output =  shell_exec("git log --format=\"%H\" -n 1 2>&1");
 //var_dump($output);
 $data['output'] = $output;
 
