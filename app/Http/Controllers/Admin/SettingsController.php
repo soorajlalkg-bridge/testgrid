@@ -35,7 +35,7 @@ class SettingsController extends Controller
     public function upgrade()
     {
         $data = [];
-        $output =  shell_exec("git log --format=\"%H\" -n 1 2>&1");
+        $output =  shell_exec("git fetch --dry-run 2>&1");
     //var_dump($output);
     $data['output'] = $output;
     	return view('admin.settings.upgrade', $data);
