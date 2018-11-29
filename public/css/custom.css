@@ -1,0 +1,449 @@
+input:required {
+    box-shadow:none;
+}
+label.secondary-btn {
+	margin-bottom: 0;
+}
+input.error,select.error {
+	border: 1px solid red;
+}
+.cancel-btn {
+	background: #6c757d;
+    color: #ffffff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    padding: 10px 25px;
+    font-size: 0.875rem;
+}
+.btn .material-icons.dp48 {
+	line-height: 1.5em;
+}
+.bootbox .modal-dialog {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - (.5rem * 2));
+}
+@media (min-width: 576px) {
+	.bootbox .modal-dialog {
+	    min-height: calc(100% - (1.75rem * 2));
+	}
+}
+.pagination .page-link {
+	color: #ca2e00;
+}
+.pagination .page-item.active .page-link {
+	background-color: #ca2e00;
+    border-color: #ca2e00;
+}
+input[type="button"]{
+   outline:none;
+}
+input[type="button"]::-moz-focus-inner {
+   border: 0;
+}
+.configure tr:hover input {
+	background-color: white !important;
+	border: 1px solid grey;
+}
+#loading-image {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	overflow: show;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.invalid {
+	border-bottom: 1px solid #F44336 !important;
+    box-shadow: 0 1px 0 0 #F44336 !important;
+}
+.invalid-error-msg {
+	font-size: 10px;
+	position: absolute;
+	top: 48px;
+	left: 15px;
+	color: #F44336;
+}
+.bootbox-close-button {
+	display: none;
+}
+.edited-row {
+	background-color: #EAD575 !important;
+}
+.video-scroll {
+	
+}
+.video-outer{
+	width: 100%;
+	overflow-x: scroll;
+	float: left;
+	padding: 0;
+}
+.video-wrapp{
+	width: 300px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	background-color: #000;
+}
+.video-controller{
+	width: auto;
+	display: inline-flex;
+}
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:focus {
+	box-shadow: none;
+}
+.ripple:hover {
+  background: #ba2e05 radial-gradient(circle, transparent 1%, #ba2e05 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #ef7753;
+  background-size: 100%;
+  transition: background 0s;
+}
+.my-peak-meter{
+  width: 40px; 
+  height: 300px; 
+  margin: 0;
+  /*transform: rotate(90deg);*/
+  white-space: nowrap;
+  position: absolute;
+  /*left: 125px;*/
+  z-index: 999;
+  top: 43px;
+  transform: rotate(90deg);
+  transform-origin: 100% 0;
+  right: 0;
+  left: auto;
+  top: auto;
+}
+.hidden-meter {
+  display: none;
+}
+.video-wrapp .video-bar{
+	margin-top: 0px;
+	text-align: center;
+}
+@media (min-width: 992px) {
+.header-fixed .app-body {
+    margin-top: 34px;
+}
+}
+.app-login .app-header {
+	top: 0;
+}
+.error-block {
+  position: relative;
+  top: -15px;
+  color: #F44336;
+  font-size: 12px;
+}
+.panel-body .error-block {
+  top: 5px;
+}
+.form-title {
+  color: #ca2e00;
+  font-weight: 600;
+}
+
+/*custom volume button*/
+.slidecontainer {
+    display: inline-block;
+    width: 75%;
+    float: left;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    vertical-align: middle;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+#custom-vjs-control-text i {
+    color: #FFFFFF;
+}
+
+.video-js .vjs-volume-menu-button, .video-js .vjs-subtitles-button, .video-js .vjs-captions-button { 
+   display: none; 
+}
+
+.video-js .vjs-custom-volume-button {
+    vertical-align: middle;
+    /*width: 10em !important;*/
+    /*background: #212730;*/
+    padding-left: 0.5em !important;
+    width: 3em !important;
+}
+.video-js .vjs-custom-volume-button .vjs-control-text {
+    font-size: 1.8em;
+    /*width: 25%;*/
+    position: initial;
+    display: inline-block;
+    float: left;
+    height: auto;
+    line-height: 2em;
+    width: 100%;
+}
+.video-js .vjs-custom-volume-button .slidecontainer {
+  display: none;
+}
+.video-js .vjs-custom-volume-button .vjs-control-text i.material-icons {
+  font-size: 20px;
+}
+.video-js .vjs-custom-volume-button:hover {
+  width: 10em !important;
+}
+.video-js .vjs-custom-volume-button:hover .vjs-control-text {
+  width: 25%;
+}
+.video-js .vjs-custom-volume-button:hover .slidecontainer {
+  display: inline-block;
+}
+.video-js .vjs-custom-volume-button .vjs-custom-volume-mute-control:hover, .video-js .vjs-custom-volume-button .vjs-custom-volume-level:hover {
+  cursor: pointer;
+}
+.padding-t-b {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*footer {
+    position: absolute;
+    width: 100%;
+}*/
+.video-container {
+  width: 100%;
+}
+.video-js {
+  background: #000 !important;
+}
+.group-wrapp .button-cntrl {
+  margin-top: -7px;
+}
+/*custom fullscreen button css starts here*/
+.video-js .vjs-custom-fullscreen-control, .full-screen-helper .video-js .vjs-fullscreen-control {
+  display: none;
+}
+.full-screen-helper .video-js .vjs-custom-fullscreen-control {
+  display: inline-block;
+}
+.video-js .vjs-custom-fullscreen-control .vjs-control-text {
+  font-size: 1.8em;
+  position: initial;
+  display: inline-block;
+  float: left;
+  height: auto;
+  line-height: 2.2em;
+  width: 100%;
+}
+.video-js .vjs-custom-fullscreen-control .vjs-control-text i.material-icons {
+  font-size: 20px;
+}
+.video-js .vjs-custom-fullscreen-control:hover {
+  text-shadow: 0em 0em 1em white;
+  cursor: pointer;
+}
+.header .button:hover {
+  color: #ffffff;
+  background: #ca2e00;
+  border-color: #ca2e00;
+}
+.full-screen-helper .my-vu-meter {
+    background: #000;
+}
+.full-screen-helper .video-wrapp {
+  background: #3da03d;
+}
+.full-screen-helper .video-wrapp .video-bar {
+  margin-top: 0;
+  display: table;
+}
+.full-screen-helper .video-wrapp .video-bar span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/*custom fullscreen button css ends here*/
+/*toggle button*/
+.toggle-handle {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.toggle.btn {
+  border-radius: 30px;
+}
+.toggle.btn:not(.off), .toggle.btn-success:hover, .toggle-on {
+  color: #ffffff;
+  background: #ca2e00 !important;
+  border-color: #ca2e00 !important;
+}
+.toggle-on:hover {
+    color: #fff;
+    background-color: #c14723;
+    border-color: #1e7e34;
+}
+.toggle-off {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.toggle-off.btn {
+  padding-left: 28px;
+}
+.toggle-handle {
+  left: -12px;
+  border-radius: 50%;
+}
+.toggle.btn.off .toggle-handle {
+  left: 12px;
+}
+
+/*backend css starts here*/
+.app-header .navbar-brand .navbar-brand-full {
+  width: auto;
+  height: auto;
+  margin-left: 45px;
+}
+.app-header .navbar-brand .navbar-brand-minimized {
+  width: auto;
+  height: auto;
+  margin-left: 150px;
+}
+.btn.btn-xs .fa {
+  width: 12px;
+}
+.app-body .sidebar .nav-link:hover {
+    background: #ca2e00;
+}
+.app-login .button, .app-body .button {
+  color: #ffffff;
+  background: #ca2e00;
+  border-color: #ca2e00;
+}
+.btn-link {
+  color: #ca2e00;
+}
+.btn-link:hover {
+  color: #ca2e00;
+}
+.app .button:hover {
+  background-color: #c14723;
+}
+.app .button:active, .app .button:focus {
+    color: #fff;
+    background-color: #ca2e00;
+    border-color: #ca2e00;
+}
+.app .button:focus, .app .button.focus {
+    box-shadow: 0 0 0 0.2rem #d0502a;
+}
+.app .button:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #ca2e00;
+  border-color: #ca2e00;
+}
+.app .button:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.2rem #d0502a;
+}
+.app-body .sidebar .nav-link.active .nav-icon {
+    color: #ca2e00;
+}
+.app-body .dt-button {
+  background: #ca2e00;
+  border-color: #ca2e00;
+  color: #FFF;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+}
+.dt-button:hover:not(.disabled) {
+    border: 1px solid #ca2e00 !important;
+    background-color: #d0502a !important;
+    background-image: none !important;
+}
+.dt-button:active:not(.disabled) {
+  background-color: #d0502a !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.dt-button:focus:not(.disabled) {
+  border: 1px solid #ca2e00 !important;
+  background-color: #d0502a !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+@media (min-width: 992px) {
+  .header-fixed .app-header {
+      height: 80px;
+  }
+  .header-fixed .app-body {
+      margin-top: 80px;
+  }
+  .ig-header-fixed .app-body {
+      margin-top: 59px;
+  }
+}
+@media (max-width: 991.98px) {
+  .app-body {
+      margin-top: 30px;
+  }
+}
+/*backend css ends here*/
+/*installer css starts here*/
+.master {
+  background: #f7e0d9;
+}
+.master .button, .step__item.active .step__icon, .step__item.active ~ .step__divider, 
+.step__item.active ~ .step__item .step__icon {
+  background-color: #ca2e00;
+}
+.master .form-group.has-error .error-block {
+  top: 0;
+}
+.box {
+  width: 500px;
+}
+/*installer css ends here*/
