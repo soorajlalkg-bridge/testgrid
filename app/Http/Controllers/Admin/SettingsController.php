@@ -43,16 +43,6 @@ class SettingsController extends Controller
 
     public function upgradeVersion(Request $request)
     {
-        //@todo -validate with confirm password
-        /*$this->validate($request, [
-            //'old_password' => 'required',
-            'new_password' => 'required|min:6',
-            'confirm_password' => 'required|min:6',
-        ]);
-
-        $user = Auth::user();
-        $user->password = bcrypt($request->get('new_password'));
-        $user->save();*/
         $output =  shell_exec("git fetch --dry-run 2>&1");
         $message = 'Version has been upgraded successfully!';
         if ($output == NULL) {
