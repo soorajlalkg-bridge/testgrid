@@ -40,6 +40,7 @@ Route::group(['middleware' => 'checkInstall'], function () {
 	Route::get('/changePassword', 'Admin\ProfileController@changePassword');
 	Route::post('/savePassword', 'Admin\ProfileController@savePassword');
 	Route::get('/upgrade', 'Admin\SettingsController@upgrade');
+	Route::post('/upgradeVersion', 'Admin\SettingsController@upgradeVersion');
 	
 
 });

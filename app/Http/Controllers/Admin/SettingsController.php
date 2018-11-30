@@ -40,4 +40,27 @@ class SettingsController extends Controller
     $data['output'] = $output;
     	return view('admin.settings.upgrade', $data);
     }
+
+    public function upgradeVersion(Request $request)
+    {
+        //@todo -validate with confirm password
+        /*$this->validate($request, [
+            //'old_password' => 'required',
+            'new_password' => 'required|min:6',
+            'confirm_password' => 'required|min:6',
+        ]);
+
+        $user = Auth::user();
+        $user->password = bcrypt($request->get('new_password'));
+        $user->save();*/
+        $output =  shell_exec("git fetch --dry-run 2>&1");
+        $message = 'Version has been upgraded successfully!';
+        if ($output == NULL) {
+            $message = 'Same version';
+        } else {
+            shell_exec("git pull origin master");
+        }
+
+    	return redirect('admin/upgrade')->with('success', $message);
+    }
 }
